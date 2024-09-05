@@ -1,3 +1,9 @@
+#### Preamble ####
+# Purpose: Get data on 2021 Federal Election and make table
+# Author: group18 members
+# Email: ziqi.zhu@mail.utoronto.ca
+# Date: 5 Septemper 2024
+# Prerequisites: -
 # First part that make a simulation with replacement
 # Apply packages
 library(tidyverse)
