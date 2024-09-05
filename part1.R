@@ -1,4 +1,5 @@
-# first part that make a simulation with replacement
+# First part that make a simulation with replacement
+# Apply packages
 library(tidyverse)
 library(janitor)
 
