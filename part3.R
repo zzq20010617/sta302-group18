@@ -6,6 +6,7 @@ cleaned_elections_data <-
 # Have a look at the first six rows
 #head(cleaned_elections_data)
 
+# Select useful columns we need
 cleaned_elections_data <-
   cleaned_elections_data |>
   select(
@@ -14,6 +15,7 @@ cleaned_elections_data <-
   )
 #head(cleaned_elections_data)
 
+# Rename column headers
 cleaned_elections_data <-
   cleaned_elections_data |>
   rename(
@@ -21,6 +23,7 @@ cleaned_elections_data <-
     elected_candidate = elected_candidate_candidat_elu
   )
 
+# Extract parties form column
 cleaned_elections_data <-
   cleaned_elections_data |>
   separate(
@@ -32,6 +35,7 @@ cleaned_elections_data <-
 
 head(cleaned_elections_data)
 
+# Rename Party names to English
 cleaned_elections_data <-
   cleaned_elections_data |>
   mutate(
@@ -48,6 +52,7 @@ cleaned_elections_data <-
 
 head(cleaned_elections_data)
 
+# Generate a cleaned data set
 write_csv(
   x = cleaned_elections_data,
   file = "cleaned_elections_data.csv"
